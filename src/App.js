@@ -7,7 +7,7 @@ function App() {
 
     <header className="header">
 
-      <img src="src/img/Pokeball.png" alt="" className="header-logo" />
+      <img src="./img/Pokeball.png" alt="" className="header-logo" />
       <h1>Pokédex</h1>
       <input className="header-input" type="search" placeholder="Search" />
         
