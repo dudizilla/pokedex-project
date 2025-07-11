@@ -1,0 +1,47 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+h1 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: white;
+}
+.header {
+  padding: 18px 16px 24px 16px;
+  display: grid;
+  align-items: center;
+  background-color: #ff0000
+}
+.header-input {
+  display: flex;
+  align-items: flex-start;
+  min-width: 300px;
+  height: 20px;
+  gap:15px;
+
+  background: white;
+  border: 1px solid gainsboro;
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: 10px;
+  color: #000000;
+  margin: 0;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
