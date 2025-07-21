@@ -5,13 +5,19 @@ import './App.css';
 function App() {
   return (
 
-    <header className="header">
-
-      <img src="./img/Pokeball.png" alt="" className="header-logo" />
-      <h1>Pokédex</h1>
-      <input className="header-input" type="search" placeholder="Search" />
-        
-    </header>
+  <header className="header">
+    <nav className="header-nav">
+      <div className="header-nav-top">
+        <img src="./img/Pokeball.svg" alt="" className="header-logo" />
+        <h1>Pokédex</h1>
+      </div>
+      <div className="header-input-container">
+        <img src="./img/Search.svg" alt="" className="header-input-icon" />
+        <input className="header-input" type="search" placeholder="Search" />
+      </div>
+      <img src="./img/Vector.svg" alt="" className="header-filter" />
+    </nav>
+  </header>
   );
 }
 
