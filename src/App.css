@@ -17,17 +17,14 @@ h1 {
 }
 .header {
   padding: 18px 16px 24px 16px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  gap: 18px;
   align-items: center;
   background-color: #ff0000
 }
 @media screen and (min-width: 1440px) {
   .header {
-    padding: 18px 16px 24px 16px;
-    display: flex;
-    gap: 10px;
-    background-color: #ff0000
+    padding: 18px 400px 30px 400px;
   }
 }
 
