@@ -13,7 +13,7 @@ function App() {
       <div className="header-search-wrapper">
         <div className="header-input-container">
           <img alt="" className="header-input-icon" src="./img/Search.svg" />
-          <input className="header-input" placeholder="Search" type="search" />
+          <input className="header-input" id="search" placeholder="Search" type="search" />
         </div>
       </div>
    </header>
