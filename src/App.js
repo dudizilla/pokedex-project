@@ -3,6 +3,19 @@ import{ useState, useEffect } from 'react';
 import './App.css';
 
 function App() {
+  useEffect(() => {
+    const getData = async () => {
+      try {
+        const data = await fetchPokemons();
+        setPokemons(data.pokemon);
+      } catch (err) {
+        console.error('Failed to fetch pokemons:', err);
+      }
+    };
+
+    getData();
+  }, []);
+
   return (
 
     <header className="header">
@@ -14,7 +27,6 @@ function App() {
         <div className="header-input-container">
           <img alt="" className="header-input-icon" src="./img/Search.svg" />
           <input className="header-input" id="search" placeholder="Search" type="search"/>
-          <FilterButton/>
         </div>
       </div>
    </header>
