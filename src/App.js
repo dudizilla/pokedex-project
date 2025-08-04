@@ -1,6 +1,7 @@
 import React from 'react';
 import{ useState, useEffect } from 'react';
 import './App.css';
+import FilterButton from './components/FilterButton';
 
 function App() {
   return (
@@ -14,8 +15,8 @@ function App() {
         <div className="header-input-container">
           <img alt="" className="header-input-icon" src="./img/Search.svg" />
           <input className="header-input" id="search" placeholder="Search" type="search"/>
-          <FilterButton/>
         </div>
+        <FilterButton/>
       </div>
    </header>
   );
