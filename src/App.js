@@ -1,8 +1,12 @@
 import React from 'react';
 import{ useState, useEffect } from 'react';
 import './App.css';
+import Search from './components/Search.js';
+
 
 function App() {
+  const [search, setSearch] = useState('');
+
   return (
 
     <header className="header">
@@ -11,10 +15,7 @@ function App() {
         <h1>Pokédex</h1>
       </div>
       <div className="header-search-wrapper">
-        <div className="header-input-container">
-          <img alt="" className="header-input-icon" src="./img/Search.svg" />
-          <input className="header-input" id="search" placeholder="Search" type="search" />
-        </div>
+      <Search value={search} onChange={(e) => setSearch(e.target.value)} /> 
       </div>
    </header>
   );
