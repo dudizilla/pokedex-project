@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+import React from 'react';
+import{ useState, useEffect } from 'react';
 import './App.css';
+import Search from './components/Search.js';
+
 
 function App() {
+  const [search, setSearch] = useState('');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <header className="header">
+      <div className="header-top">
+        <img alt="" className="header-logo" src="./img/Pokeball.svg" />
+        <h1>Pokédex</h1>
+      </div>
+      <div className="header-search-wrapper">
+      <Search value={search} onChange={(e) => setSearch(e.target.value)} /> 
+      </div>
+   </header>
   );
 }
 
