@@ -9,23 +9,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-}
-h1 {
-  font-size: 1.875rem;
-  font-weight: 700;
-  color: white;
-}
-.header {
-  padding: 18px 16px 24px 16px;
-  display: flex;
-  gap: 18px;
-  align-items: center;
-  background-color: #ff0000
-}
-@media screen and (min-width: 1440px) {
-  .header {
-    padding: 18px 400px 30px 400px;
-  }
+  background-color: #ff0000;
 }
 
 @keyframes App-logo-spin {
