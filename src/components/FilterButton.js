@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import './FilterButton.css';
 
 
 function FilterButton() {
@@ -29,29 +30,18 @@ function FilterButton() {
         <img src="./img/Vector.svg" alt="Filter" />
       </button>
       {isOpen && (
-    <div className="filter-popup">
-    <p className="filter-label">Sort by:</p>
-    <label className="filter-option">
-      <input
-        type="radio"
-        name="sort"
-        value="name"
-        checked={selected === 'name'}
-        onChange={() => handleSelect('name')}
-      />
-      Name
-    </label>
-    <label className="filter-option">
-      <input
-        type="radio"
-        name="sort"
-        value="number"
-        checked={selected === 'number'}
-        onChange={() => handleSelect('number')}
-      />
-      Number
-    </label>
-  </div>
+      <div className="filter-popup">
+        <p className="filter-label">Sort by:</p>
+        <div className="filter-options">
+          <label className="filter-option">
+          <input type="radio" name="sort" value="name" checked={selected === 'name'} onChange={() => handleSelect('name')}/>
+          Name
+          </label>
+          <label className="filter-option">
+          <input type="radio" name="sort" value="number" checked={selected === 'number'} onChange={() => handleSelect('number')}/> Number
+          </label>
+        </div>
+      </div>
       )}
     </div>
   );

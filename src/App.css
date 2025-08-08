@@ -10,7 +10,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   padding: 0px 4px 4px 4px;
-  background-color: #DC0A2D;
+  background-color: #dc0a2d;
 }
 h1 {
   font-size: 1.875rem;
@@ -37,12 +37,12 @@ h1 {
 }
 .header-input-container {
   display: flex;
-  background: #FFF;
+  background: #fff;
   padding: 8px;
   align-items: center;
   border-radius: 16px;
   box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.25) inset;
-  width: 100%;  
+  width: 100%;
   gap: 8px;
 }
 
@@ -56,64 +56,6 @@ h1 {
   gap: 8px;
   width: 100%;
 }
-
-.filter-button-wrapper {
-  position: relative;
-}
-
-.filter-button {
-  background: white;
-  border: none;
-  border-radius: 16px;
-  padding: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.25) inset;
-  cursor: pointer;
-}
-
-.filter-button img {
-  width: 16px;
-  height: 16px;
-}
-
-.filter-popup {
-  position: absolute;
-  top: 120%;
-  right: 0;
-  background: #DC0A2D;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  border-radius: 12px;
-  overflow: hidden;
-  z-index: 10;
-}
-.filter-label {
-  font-size: 14px;
-  font-weight: 500;
-  margin-bottom: 6px;
-  color: #333;
-}
-
-.filter-option {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 14px;
-  padding: 4px 0;
-  cursor: pointer;
-}
-
-.filter-option input[type="radio"] {
-  accent-color: #dc0a2d;
-  width: 14px;
-  height: 14px;
-  cursor: pointer;
-}
-.filter-option:hover {
-  background-color: #f1f1f1;
-}
-
 
 @media screen and (min-width: 1440px) {
   .header {
