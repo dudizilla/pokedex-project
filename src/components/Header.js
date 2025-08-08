@@ -1,6 +1,5 @@
 import React from 'react';
-import './Header.css'; // Reaproveite ou mova estilos da App.css
-
+import './Header.css'; 
 function Header() {
   return (
     <header className="header">
