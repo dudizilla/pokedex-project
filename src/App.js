@@ -1,24 +1,24 @@
-import logo from './logo.svg';
+import React from 'react';
+import{ useState, useEffect } from 'react';
 import './App.css';
+import FilterButton from './components/FilterButton';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <header className="header">
+      <div className="header-top">
+        <img alt="" className="header-logo" src="./img/Pokeball.svg" />
+        <h1>Pokédex</h1>
+      </div>
+      <div className="header-search-wrapper">
+        <div className="header-input-container">
+          <img alt="" className="header-input-icon" src="./img/Search.svg" />
+          <input className="header-input" id="search" placeholder="Search" type="search"/>
+        </div>
+        <FilterButton/>
+      </div>
+   </header>
   );
 }
 
